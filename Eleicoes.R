@@ -61,15 +61,3 @@ library(mailR)
 library(htmlTable)
 library(ggplot2)
 
-
-send.mail(from = "ericopenteado@gmail.com",
-          to = c("ericopenteado@gmail.com", "anaduartec@outlook.com", '3613leo@gmail.com', "marinademello77@gmail.com"),
-          subject = "Eleicoes 2022",
-          body = "Eleicoes 2022, resultados parciais",
-          smtp = list(host.name = "smtp.gmail.com", port = 587, 
-                      user.name = "ericopenteado@gmail.com", passwd = "xcvenxnvulikzlhd",
-                      tls = T),
-          authenticate = T,
-          send = TRUE,
-          attach.files = "D:/Documentos/Documents/eleicoes.png")
-
